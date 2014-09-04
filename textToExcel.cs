@@ -11,9 +11,12 @@ public class rawParser
 			using (StreamReader sr = new StreamReader("test.txt"))
 			{
 				string raw = sr.ReadToEnd();
-				string[] scans = raw.Split(';');
-				foreach(string s in scans)
-				{
+				string[] scans = raw.Split(';');
+
+				foreach(string s in scans)
+
+				{
+
 					string scan = s.Trim();
 	   				Console.WriteLine("We have {0}", scan);
 				}
