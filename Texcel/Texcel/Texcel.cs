@@ -35,65 +35,71 @@ namespace Texcel
                 Console.Write("Complete\n");
             }
             Console.Write("Select mode: <S>ingle file or <M>ultiple files\n: ");
-            char op = Convert.ToChar(Console.ReadLine());
+            Boolean val = false;
             int num = 2;
-            if (op == 's' || op == 'S')
+            while (!val)
             {
-                
-                Console.Write("Enter Subject Number to process\n: ");
-                int run = int.Parse(Console.ReadLine());
-                excelWrite(run, 0, excel, wb);
-            }
-            else if (op == 'm' || op == 'M')
-            {
-                Console.Write("Select sub-mode: <R>ange of files or <L>ist of files\n: ");
-                char subop = Convert.ToChar(Console.ReadLine());
-
-                if (subop == 'r' || subop == 'R')
+                char op = char.ToLower(Convert.ToChar(Console.ReadLine()));
+                if (op == 's')
                 {
-                    Boolean valid = false;
-                    int low, high;
-                    while (!valid)
+                    val = true;
+                    Console.Write("Enter Subject Number to process\n: ");
+                    int run = int.Parse(Console.ReadLine());
+                    excelWrite(run, 0, excel, wb);
+                }
+                else if (op == 'm')
+                {
+                    val = true;
+                    Console.Write("Select sub-mode: <R>ange of files or <L>ist of files\n: ");
+                    char subop = char.ToLower(Convert.ToChar(Console.ReadLine()));
+
+                    if (subop == 'r')
                     {
-                        Console.Write("To process multiple files, please enter a range of\nnumbers to process.\n");
-                        Console.Write("Enter lower number to process\n: ");
-                        low = int.Parse(Console.ReadLine());
-                        Console.Write("Enter upper number to process\n: ");
-                        high = int.Parse(Console.ReadLine());
-                        num = high + 1;
-                        if (low <= high)
+                        Boolean valid = false;
+                        int low, high;
+                        while (!valid)
                         {
-                            valid = true;
-                            for (int x = high; x >= low; x--)
+                            Console.Write("To process multiple files, please enter a range of\nnumbers to process.\n");
+                            Console.Write("Enter lower number to process\n: ");
+                            low = int.Parse(Console.ReadLine());
+                            Console.Write("Enter upper number to process\n: ");
+                            high = int.Parse(Console.ReadLine());
+                            num = high + 1;
+                            if (low <= high)
                             {
-                                excelWrite(x, 0, excel, wb);
+                                valid = true;
+                                for (int x = high; x >= low; x--)
+                                {
+                                    excelWrite(x, 0, excel, wb);
+                                }
+                            }
+                            else { Console.Write("Error: Low must be smaller than or equal to High\n"); }
+                        }
+                    }
+                    else if (subop == 'l')
+                    {
+                        Boolean reading = true;
+                        List<int> nums = new List<int>();
+                        Console.Write("Enter subject numbers one at a time.\nWhen finished, enter -1.\n");
+                        while (reading)
+                        {
+                            Console.Write(": ");
+                            int temp = int.Parse(Console.ReadLine());
+                            if (temp == -1) { reading = false; }
+                            else if (temp != -1)
+                            {
+                                nums.Add(temp);
                             }
                         }
-                        else { Console.Write("Error: Low must be smaller than or equal to High\n"); }
-                    }
-                }
-                else if(subop == 'l' || subop == 'L')
-                {
-                    Boolean reading = true;
-                    List<int> nums = new List<int>();
-                    Console.Write("Enter subject numbers one at a time.\nWhen finished, enter -1.");
-                    while (reading)
-                    {
-                        Console.Write(": ");
-                        int temp = int.Parse(Console.ReadLine());
-                        if (temp == -1) { reading = false; }
-                        else if (temp != -1)
+                        num--;
+                        foreach (int x in nums)
                         {
-                            nums.Add(temp);
+                            num++;
+                            excelWrite(x, 0, excel, wb);
                         }
                     }
-                    num--;
-                    foreach (int x in nums)
-                    {
-                        num++;
-                        excelWrite(x, 0, excel, wb);
-                    }
                 }
+                else { Console.Write("Sorry, that isn't a valid command.");  }
             }
             Console.Write("Press <enter> to complete");
             int finish = Console.Read();
