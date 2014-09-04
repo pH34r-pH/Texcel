@@ -1,0 +1,6 @@
+C:\Users\Tyler\Documents\GitHub\Texcel\Texcel\Texcel\bin\Debug\Texcel.exe.config
+C:\Users\Tyler\Documents\GitHub\Texcel\Texcel\Texcel\obj\Debug\Texcel.csprojResolveAssemblyReference.cache
+C:\Users\Tyler\Documents\GitHub\Texcel\Texcel\Texcel\bin\Debug\Texcel.exe
+C:\Users\Tyler\Documents\GitHub\Texcel\Texcel\Texcel\bin\Debug\Texcel.pdb
+C:\Users\Tyler\Documents\GitHub\Texcel\Texcel\Texcel\obj\Debug\Texcel.exe
+C:\Users\Tyler\Documents\GitHub\Texcel\Texcel\Texcel\obj\Debug\Texcel.pdb
