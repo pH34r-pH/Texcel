@@ -1,0 +1,9 @@
+C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\bin\Debug\VisualTexcel.exe.config
+C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\bin\Debug\VisualTexcel.exe
+C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\bin\Debug\VisualTexcel.pdb
+C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\obj\Debug\VisualTexcel.csprojResolveAssemblyReference.cache
+C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\obj\Debug\VisualTexcel.Properties.Resources.resources
+C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\obj\Debug\VisualTexcel.csproj.GenerateResource.Cache
+C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\obj\Debug\VisualTexcel.exe
+C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\obj\Debug\VisualTexcel.pdb
+C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\obj\Debug\VisualTexcel.GUI.resources
