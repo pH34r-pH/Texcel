@@ -7,3 +7,6 @@ C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\obj\Debug\Visua
 C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\obj\Debug\VisualTexcel.exe
 C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\obj\Debug\VisualTexcel.pdb
 C:\Users\Tyler\Documents\GitHub\Texcel\VisualTexcel\VisualTexcel\obj\Debug\VisualTexcel.GUI.resources
+C:\Users\Tyler\Documents\GitHub\Personal\Texcel\VisualTexcel\VisualTexcel\bin\Debug\VisualTexcel.exe.config
+C:\Users\Tyler\Documents\GitHub\Personal\Texcel\VisualTexcel\VisualTexcel\obj\Debug\VisualTexcel.exe
+C:\Users\Tyler\Documents\GitHub\Personal\Texcel\VisualTexcel\VisualTexcel\obj\Debug\VisualTexcel.pdb
