@@ -1,0 +1,21 @@
+﻿<Page x:Class="VisualTexcelProcessor.RangePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="330" d:DesignWidth="515"
+	Title="RangePage">
+
+    <Grid>
+        <Label x:Name="RangeLabel" Content="Process a Range of Files" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="68" Width="495" FontFamily="Calibri" FontSize="36"/>
+        <TextBox x:Name="MinBox" HorizontalAlignment="Left" Height="23" Margin="125,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="MinBox_PreviewTextInput"/>
+        <Label x:Name="MinLabel" Content="Lower file number: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,77,0,0"/>
+        <Label x:Name="MaxLabel" Content="Higher file number: " HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MaxBox" HorizontalAlignment="Left" Height="23" Margin="125,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="MaxBox_PreviewTextInput"/>
+        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Left" Margin="320,80,0,0" VerticalAlignment="Top" Width="122" Height="54" Click="StartButton_Click"/>
+        <TextBox x:Name="ProgressBox" HorizontalAlignment="Left" Height="119" Margin="10,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="495" IsEnabled="False"/>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="22" Margin="10,298,0,0" VerticalAlignment="Top" Width="495"/>
+
+    </Grid>
+</Page>
