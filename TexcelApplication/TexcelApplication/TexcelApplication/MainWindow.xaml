@@ -1,0 +1,8 @@
+﻿<Window x:Class="TexcelApplication.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Texcel" Height="210" Width="400">
+    <DockPanel>
+        <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Hidden"/>
+    </DockPanel>
+</Window>
